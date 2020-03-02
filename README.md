@@ -12,7 +12,7 @@ Simple website built in procedural PHP.
 ## How It Works
 Each section of the website is contained within its own PHP file, all of which are located at the root.
 At the top of each file, the $current variable is declared. Its value will be a string containing the name of the current section.
-Then, the 'tools.php' file is called via 'require_once'. This file is located inside the 'includes' folder at the root.
+Then, the _tools.php_ file is called via _require_once_. This file is located inside the _includes_ folder at the root.
 
 Example:
 ```php
