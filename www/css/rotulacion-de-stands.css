@@ -1,0 +1,5 @@
+@media all and (max-width: 601px) {
+	#rotulacion-de-stands-1 p br {
+		display: none;
+	}
+}

@@ -1,0 +1,147 @@
+header {
+	background-color: rgba(255, 255, 255, .95);
+	height: 103px;
+	position: fixed;
+	top: 0;
+	z-index: 3000001;
+}
+
+.logo, #logo {
+	height: 30px;
+}
+
+header div {
+	line-height: 100px;
+	/*height: 100px;*/
+}
+
+header div  * {
+	vertical-align: middle;
+}
+
+header h1 {
+	display: inline-block;
+	margin-left: 40px;
+	font-size: 13px;
+}
+
+nav, #hamburger {
+	float: right;
+}
+
+nav a, nav span {
+	margin-left: 25px;
+	font-size: 15px;
+}
+
+nav span {	
+	position: relative;
+	top: -3px;/* to fix offset against menus font */
+}
+
+nav span a {
+	margin-left: 5px;
+	color: #a9a9a9;
+	color: grey;
+}
+
+#hamburger {
+	font-size: 15px;
+	cursor: pointer;
+	display: none;
+	max-height: 100%;
+}
+
+.rotate {
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+.current {
+	color: #00b5af;
+	border-color: #00b5af;
+	cursor: default;
+}
+
+@media all and (max-width: 1100px) {
+	header h1 {
+		display: none;
+	}
+}
+
+@media all and (max-width: 875px) {
+	header {
+		height: 75px;
+	}
+
+	header div, nav span, #hamburger {
+		line-height: 72px;
+	}
+
+	nav {
+		position: fixed;
+		left: 0;
+		top: 75px;
+		background: rgba(255, 255, 255, .95);
+		width: 100%;
+		-webkit-border-radius: 0 0 20px 20px;
+		   -moz-border-radius: 0 0 20px 20px;
+		        border-radius: 0 0 20px 20px;
+		height: auto;
+		max-height: 0%;
+		padding: 0px!important;
+		z-index: 3000000;
+		transition: padding .5s ease, max-height .5s ease;
+	}
+
+	nav a, nav span {
+		display: block;
+		text-align: left;
+		line-height: 0px;
+		margin: 0 auto;
+		padding: 0px!important;
+		border: 0!important;
+		opacity: 0;
+		width: 93%;
+		-webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+		   -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+		        box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+		transition: line-height .5s ease, opacity .5s ease;
+	}
+
+	nav a {
+		border-bottom: 1px solid lightgrey!important;
+	}
+
+	nav a.button, nav a.button:hover {
+		border-color: lightgrey!important;
+		border-radius: 0;
+	}
+
+	nav.open {
+		max-height: 100%;
+		padding: 15px 0!important;
+		-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+		   -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+		        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+	}
+
+	nav.open a, nav.open span {
+		line-height: 50px;
+		opacity: 1;
+	}
+
+	nav span a {
+		display: inline-block;
+		width: auto;
+		border: 0px!important;
+	}
+
+	#hamburger {
+		display: -moz-initial;
+		display: initial;
+	}
+}

@@ -1,0 +1,17 @@
+#directorios-y-senaletica-1 img {
+	margin-top: 70px;
+	width: 100%;
+	max-width: 600px;
+}
+
+@media all and (max-width: 875px) {
+	#directorios-y-senaletica-1 img {
+		margin-top: 50px;
+	}
+}
+
+@media all and (max-width: 620px){
+	#directorios-y-senaletica-1 p br {
+		display: none;
+	}
+}

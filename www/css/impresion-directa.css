@@ -1,0 +1,13 @@
+#impresion-directa-1 p {
+	padding-bottom: 0!important;
+}
+
+#impresion-directa-1 img {
+	max-width: 100%;
+}
+
+@media all and (max-width: 618px) {
+	#impresion-directa-1 p br {
+		display: none;
+	}
+}

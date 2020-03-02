@@ -1,0 +1,5 @@
+@media all and (max-width: 540px) {
+	#vinilos-al-acido-1 p br {
+		display: none;
+	}
+}

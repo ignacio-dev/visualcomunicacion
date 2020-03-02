@@ -1,0 +1,5 @@
+@media all and (max-width: 615px) {
+	#lonas-1 p br {
+		display: none;
+	}
+}

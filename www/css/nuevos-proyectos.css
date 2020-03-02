@@ -1,0 +1,108 @@
+.btn-full-width {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background-color: #000;
+	padding: 40px 0;
+	font-family: FuturaStd-Bold;
+	color: #FFF;
+}
+
+.btn-full-width:hover {
+	color: #FFF!important;
+	text-decoration: underline;
+	opacity: .7;
+}
+
+#europcar {
+	background-image: url("../img/nuevos-proyectos/np-europcar.jpg");
+}
+
+#hertz {
+	background-image: url("../img/nuevos-proyectos/np-hertz.jpg");
+}
+
+#agencia-espacial {
+	background-image: url("../img/nuevos-proyectos/np-agencia-espacial.jpg");
+}
+
+#ilunion {
+	background-image: url("../img/nuevos-proyectos/np-ilunion.jpg");
+}
+
+.np-general {
+	min-height: 550px;
+	color: #FFF;
+	background-position: top center!important;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+}
+
+.np-general h2 {
+	background-color: #f6f3f2!important;
+	color: #000;
+	border-bottom: 0px;
+}
+
+#np-europcar {
+	background-image: url("../img/nuevos-proyectos/europcar/npeuropcar1.jpg");
+}
+
+#np-hertz {
+	background-image: url("../img/nuevos-proyectos/hertz/nphertz1.jpg");
+}
+
+#np-agencia-espacial {
+	background-image: url("../img/nuevos-proyectos/agencia-espacial/npagencia-espacial1.jpg");
+}
+
+#np-ilunion {
+	background-image: url("../img/nuevos-proyectos/ilunion/npilunion1.jpg");
+}
+
+.multifig {	
+	max-width: 100%;
+	padding: 0 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	   -ms-flex-pack: justify;
+	 justify-content: space-between;
+	margin-bottom: 0;
+}
+
+.multifig img {
+	-ms-flex-preferred-size: -webkit-calc(50% - 7px);
+	             flex-basis: -webkit-calc(50% - 7px);
+	-ms-flex-preferred-size: -moz-calc(50% - 7px);
+	             flex-basis: -moz-calc(50% - 7px);
+	-ms-flex-preferred-size: calc(50% - 7px);
+	             flex-basis: calc(50% - 7px);
+	width: -webkit-calc(50% - 7px);
+	width: -moz-calc(50% - 7px);
+	width: calc(50% - 7px);
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	             align-self: center;
+	margin-bottom: 14px;
+}
+
+@media all and (max-width: 650px) {
+	.np-general {
+		min-height: 350px;
+	}
+	.multifig img {
+		width: 100%;
+		-ms-flex-preferred-size: 100%;
+		             flex-basis: 100%;
+	}
+}
+
+@media all and (max-width: 487px) {
+	#nuevos-proyectos br {
+		display: none;
+	}
+}

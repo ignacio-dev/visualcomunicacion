@@ -1,0 +1,9 @@
+#vinilos-de-corte-1 {
+	margin-bottom: 0!important;
+}
+
+@media all and (max-width: 642px) {
+	#vinilos-de-corte-1 p br {
+		display: none;
+	}
+}

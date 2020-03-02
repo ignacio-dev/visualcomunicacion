@@ -1,0 +1,46 @@
+#quienes3 {
+	padding-bottom: 70px;
+}
+
+#quienes3 p {
+	padding-bottom: 0!important;
+}
+
+#quienes3 .article-list {
+	margin-top: 0!important;
+}
+
+.article-list {
+	max-width: 500px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 28px 56px;
+	display: block;
+	border-radius: 5px;
+}
+
+.article-list li {
+	margin: 28px 0;
+	text-align: left;
+}
+
+.article-list li:before {
+	content: '•';
+	font-size: .7em;
+}
+
+@media all and (max-width: 668px) {
+	#quienes3 .nobr {
+		display: none;
+	}
+
+	.article-list {
+		padding: 7px 28px;
+	}
+}
+
+@media all and (max-width: 610px) {
+	#quienes1 p .nobr {
+		display: none;
+	}
+}

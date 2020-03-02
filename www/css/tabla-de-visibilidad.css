@@ -1,0 +1,45 @@
+#tabla-de-visibilidad-1 {
+	padding-bottom: 70px;
+}
+
+#tabla-de-visibilidad-1 p {
+	padding-bottom: 30px;
+}
+
+#tabla-de-visibilidad-1 table {
+	margin: 0 auto;
+	font-size: .85em;
+	outline: 1px solid #f6f3f2;
+	outline-offset: -1px;
+	background-color: #fff;
+}
+
+#tabla-de-visibilidad-1 th, #tabla-de-visibilidad-1 td {
+	padding: 9px;
+	border: 1px dotted grey;
+}
+
+@media all and (max-width: 992px){
+	#tabla-de-visibilidad-1 {
+		padding-bottom: 60px;
+	}
+
+	#tabla-de-visibilidad-1 p {
+		padding-bottom: 50px;
+	}
+
+	#tabla-de-visibilidad-1 tr {
+		display: inline-block;
+	}
+
+	#tabla-de-visibilidad-1 th, #tabla-de-visibilidad-1 td {
+		display: block;
+		width: 60px;
+	}
+}
+
+@media all and (max-width: 572px) {
+	#tabla-de-visibilidad-1 p .nobr {
+		display: none;
+	}
+}
